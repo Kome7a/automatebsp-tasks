@@ -4,7 +4,7 @@
 import sys
 from selenium import webdriver
 
-my_email = "e.kontilov@abv.bg"
+my_email = ""
 my_pass = ""
 browser = webdriver.Firefox()
 browser.get("https://abv.bg")
@@ -19,7 +19,6 @@ browser.execute_script("arguments[0].remove()", frame)
 
 browser.find_element_by_id("username").send_keys(my_email)
 browser.find_element_by_id("password").send_keys(my_pass)
-# browser.find_element_by_id("password").submit()
 browser.find_element_by_id("loginBut").click()
 browser.find_element_by_class_name("abv-button").click()
 browser.find_element_by_class_name("clientField").click()
