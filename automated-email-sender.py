@@ -24,7 +24,7 @@ browser.find_element_by_class_name("abv-button").click()
 browser.find_element_by_class_name("clientField").click()
 
 browser.find_element_by_xpath("""/html/body/div[1]/div/div[4]/div/div[4]/div/div[4]/div/div[2]/div/div[2]/div/div[2]/div[1]
-/table/tbody/tr[2]/td[2]/div/input").send_keys(sys.argv[1]""")
+/table/tbody/tr[2]/td[2]/div/input""").send_keys(sys.argv[1])
 
 mess = browser.find_element_by_class_name("gwt-RichTextArea").click()
 
